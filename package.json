@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,11 @@
     "mongodb": "^3.0.7",
     "mongoose": "^5.1.0",
     "yargs": "^4.7.1"
+  },
+  "devDependencies": {
+    "expect": "^22.4.3",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.4",
+    "supertest": "^3.0.0"
   }
 }
